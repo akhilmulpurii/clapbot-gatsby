@@ -10,6 +10,7 @@ mainpitch:
     !clapbot is many things among gifs, memes, sending toxic messages to your
     friends in your discord channel.
 description: More coming soon!
+login_url: https://discord.com/api/oauth2/authorize?client_id=817663062567026719&permissions=34880&scope=bot
 intro:
   blurbs: []
   heading: " Clapbot"
