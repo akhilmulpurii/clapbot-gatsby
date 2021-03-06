@@ -13,6 +13,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  login_url,
 }) => (
   <div>
     <div
@@ -70,28 +71,31 @@ export const IndexPageTemplate = ({
             {subheading}
           </h3>
         </div>
-        <a
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontFamily: `Whitney, "Open Sans", Helvetica, sans-serif`,
-            fontWeight: "600",
-            fontSize: "11pt",
-            borderRadius: "3px",
-            cursor: "pointer",
-            height: "45px",
-            width: "250px",
-            boxShadow: "0 2px 6px 0 rgba(0, 0, 0, 0.2)",
-            backgroundColor: "#7289da",
-            border: "2px solid #7289da",
-            color: "#fff",
-            textAlign: "center",
-            margin: "0 auto",
-          }}
-        >
-          Invite to discord
-        </a>
+        {!!login_url && (
+          <a
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontFamily: `Whitney, "Open Sans", Helvetica, sans-serif`,
+              fontWeight: "600",
+              fontSize: "11pt",
+              borderRadius: "3px",
+              cursor: "pointer",
+              height: "45px",
+              width: "250px",
+              boxShadow: "0 2px 6px 0 rgba(0, 0, 0, 0.2)",
+              backgroundColor: "#7289da",
+              border: "2px solid #7289da",
+              color: "#fff",
+              textAlign: "center",
+              margin: "0 auto",
+            }}
+            onClick={() => window.open(login_url)}
+          >
+            Invite to discord
+          </a>
+        )}
       </div>
     </div>
     <section className="section section--gradient">
