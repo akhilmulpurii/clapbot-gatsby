@@ -4,13 +4,13 @@ title: Install Clapbot Now
 image: /img/background.jpg
 heading: Don't forget to upvote !clapbot
 subheading: Click on the below link to invite clapbot to your discord server
+login_url: https://discord.com/api/oauth2/authorize?client_id=817663062567026719&permissions=108608&redirect_uri=https%3A%2F%2Fclapbot-gg.netlify.app%2F&scope=bot
 mainpitch:
   title: What's Clapbot about
   description: >
     !clapbot is many things among gifs, memes, sending toxic messages to your
     friends in your discord channel.
 description: More coming soon!
-login_url: https://discord.com/api/oauth2/authorize?client_id=817663062567026719&permissions=34880&scope=bot
 intro:
   blurbs: []
   heading: " Clapbot"
