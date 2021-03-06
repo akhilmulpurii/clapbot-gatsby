@@ -28,37 +28,70 @@ export const IndexPageTemplate = ({
       <div
         style={{
           display: "flex",
-          height: "150px",
+          height: 250,
           lineHeight: "1",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           alignItems: "left",
           flexDirection: "column",
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <div
           style={{
-            boxShadow: "#036084 0.5rem 0px 0px, #036084 -0.5rem 0px 0px",
-            backgroundColor: "#1998ca",
-            color: "white",
+            display: "flex",
+            height: "155px",
             lineHeight: "1",
-            padding: "0.25em",
+            justifyContent: "space-around",
+            alignItems: "left",
+            flexDirection: "column",
           }}
         >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          <h1
+            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            style={{
+              boxShadow: "#5229ae 0.5rem 0px 0px, #5229ae -0.5rem 0px 0px",
+              backgroundColor: "#7289da",
+              color: "white",
+              lineHeight: "1",
+              padding: "15px",
+            }}
+          >
+            {title}
+          </h1>
+          <h3
+            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+            style={{
+              boxShadow: "#5229ae 0.5rem 0px 0px, #5229ae -0.5rem 0px 0px",
+              backgroundColor: "#7289da",
+              color: "white",
+              lineHeight: "1",
+              padding: "10px 15px",
+            }}
+          >
+            {subheading}
+          </h3>
+        </div>
+        <a
           style={{
-            boxShadow: "#036084 0.5rem 0px 0px, #036084 -0.5rem 0px 0px",
-            backgroundColor: "#1998ca",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            fontFamily: `Whitney, "Open Sans", Helvetica, sans-serif`,
+            fontWeight: "600",
+            fontSize: "11pt",
+            borderRadius: "3px",
+            cursor: "pointer",
+            height: "45px",
+            width: "250px",
+            boxShadow: "0 2px 6px 0 rgba(0, 0, 0, 0.2)",
+            backgroundColor: "#7289da",
+            border: "2px solid #7289da",
+            color: "#fff",
+            textAlign: "center",
+            margin: "0 auto",
           }}
         >
-          {subheading}
-        </h3>
+          Invite to discord
+        </a>
       </div>
     </div>
     <section className="section section--gradient">
